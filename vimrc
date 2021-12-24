@@ -1,11 +1,17 @@
 colorscheme codedark
 syntax enable
+set nocompatible
 set number
 set showcmd
 set cursorline
 set laststatus=2
+filetype on
 filetype indent on
-set wildmenu
+filetype plugin on
+" Auto completion
+set wildmenu 
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set showmatch
 set incsearch
 set hlsearch
